@@ -1,15 +1,18 @@
-const obj = {
-    teste: {
-        name: "teste",
-        type: "teste"
+const cadastro = {
+    pessoa: {
+        dados: {
+            nome: "fulano",
+            idade: 22,
+            email: "tal@gmail.com"
+        },
+        endereco: {
+            rua: "rua tal",
+            bairro: "centro",
+            cidade: "cidade"
+        }
     }
 }
 
-const toJSON = JSON.stringify(obj);
+const toJSON = JSON.stringify(cadastro);
 
-console.log("objeto", obj);
 console.log("JSON", toJSON);
-
-const toObj = JSON.parse(toJSON);
-
-console.log("obj", toObj);

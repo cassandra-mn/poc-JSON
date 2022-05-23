@@ -1,4 +1,4 @@
-const xml = require('object-to-xml');
+const yaml = require('js-yaml');
 
 const cadastro = {
     pessoa: {
@@ -15,6 +15,6 @@ const cadastro = {
     }
 }
 
-const toXML = xml(cadastro);
+const toYAML = yaml.dump(cadastro);
 
-console.log(toXML);
+console.log(toYAML);
